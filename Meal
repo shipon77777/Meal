@@ -48,7 +48,7 @@ const App = () => {
   const [showManagerModal, setShowManagerModal] = useState(false);
   const [managerPin, setManagerPin] = useState('');
   const [pinError, setPinError] = useState(false);
-  const CORRECT_PIN = "1234"; // Default Manager PIN
+  const CORRECT_PIN = "257880"; // Default Manager PIN
 
   // AI States
   const [aiLoading, setAiLoading] = useState(false);
@@ -694,5 +694,14 @@ const App = () => {
     </div>
   );
 };
-
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDSlgcEMZfPuUeIviUyFy4HcIjSK6z5Q20",
+  authDomain: "shipon-meal.firebaseapp.com",
+  projectId: "shipon-meal",
+  storageBucket: "shipon-meal.firebasestorage.app",
+  messagingSenderId: "7235669895",
+  appId: "1:7235669895:web:bd952fc5189c18f0548d22",
+  measurementId: "G-L967G7K1PQ"
+};
 export default App;
